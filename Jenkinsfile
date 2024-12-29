@@ -10,9 +10,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git branch: 'main1', // Ensure 'main' is the correct branch name
-                    credentialsId: 'your-git-credentials-id', // Replace with your actual credentials ID
-                    url: 'git@github.com:Ajay1672/new-Project-01-JAN-2024.git'
+                   git branch: 'main1', credentialsId: 'aj', url: 'git@github.com:Ajay1672/new-Project-01-JAN-2024.git'
             }
         }
 
